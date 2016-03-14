@@ -1,3 +1,13 @@
+/* testing purpose 
+.row{
+	border: 1px red solid;
+}
+.col{
+	border: 1px blue solid;
+}
+ css for testing ends here */
+
+
 h1, h2, h3, h4, h5, h6 {
     -webkit-font-smoothing: antialiased;
 }
@@ -9,21 +19,23 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: rgb(58,77,128);
 	text-align: center;
 	width:200px !important;
+	color: white;
 }
 	.side-nav p a svg{
 		display: inline-block;
 		vertical-align: middle;
 		width:40px;
 	}
-	.side-nav li a{
+	.side-nav a{
 		color: white !important;
 
+	}
+	.title{
+		color: rgb(58,77,128);
 	}
 #banner{
 	background-color: rgb(200,200,200);
 	color: white;
-	font-family: "Roboto" sans-serif;
-	font-weight: normal;
 	padding:5%;
 }
 	#banner .container{

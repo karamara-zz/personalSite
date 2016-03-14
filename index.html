@@ -2,10 +2,10 @@
 <html lang="en" ng-app='app'>
 <head>
 	<meta charset="UTF-8">
-	  <script src = 'bower_components/angular/angular.js'></script>
-  		<script src = 'bower_components/angular-route/angular-route.js'></script>
-  		<script src = 'bower_components/jquery/dist/jquery.js'></script>
-  		<script src = 'bower_components/Materialize/dist/js/materialize.js'></script>
+  		<script src = "//code.jquery.com/jquery-1.12.0.min.js"></script>
+	  <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
+  		<script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
   		<script src='static/js/app.js'></script>
   		<script src='static/js/home.js'></script>
 		<link rel='stylesheet' href = 'bower_components/Materialize/dist/css/materialize.css'></link>
@@ -23,10 +23,12 @@
 			<ul class ='side-nav fixed row' ng-controller='sideNavController as snCtrl'>
 
 				<a href='#/'><li class='logo'><img src="./static/img/k_Fat2.svg" alt="logo" class = 'col l12'></li></a>
-				<li class='col l12 waves-effect'><a href="#/home">Home</a></li>
-				<li class='col l12 waves-effect'><a href="#/work">Portfolio</a></li>
-				<li class='col l12 waves-effect'><a href="#/resume">Resume</a></li>
-				<li class='col l12 waves-effect'><a href="#/abou">About this site</a></li>
+				<a scroll-on-click href="#banner"><li class='col l12 waves-effect'>Home</li></a>
+				<a scroll-on-click href="#toolbox"><li class='col l12 waves-effect'>My Skills</li></a>
+				<a  scroll-on-click href="#portfolio"><li class='col l12 waves-effect'>Portfolio</li></a>
+				<a scroll-on-click href="#aboutThisSite"><li class='col l12 waves-effect'>About this site</li></a>
+				<a scroll-on-click href="#contact"><li class='col l12 waves-effect'>Contact</li></a>
+				<a href="#/resume"><li class='col l12 waves-effect' id="test">Resume</li></a>
 				<p class='col l12 logo'>
 					<?xml version="1.0" encoding="utf-8"?>
 					<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
