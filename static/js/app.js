@@ -1,12 +1,16 @@
 var app = angular.module('app', ['ngRoute'])
-.config(function($routeProvider){
+.config(function($routeProvider, $httpProvider){
 	$routeProvider
 	.when('/', {
 		templateUrl:'static/partials/index.html'
 	})
 	.otherwise({
 		redirectTo: '/'
-	})
+	});
+  $httpProvider.defaults.headers.common = {};
+  $httpProvider.defaults.headers.post = {};
+  $httpProvider.defaults.headers.put = {};
+  $httpProvider.defaults.headers.patch = {};
 })
 .directive('scrollOnClick', function() {
   return {

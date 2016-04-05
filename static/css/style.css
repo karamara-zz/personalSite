@@ -13,7 +13,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .logo{
 	text-align: center;
-	margin-bottom: 10%;
 }
 .side-nav{
 	background-color: rgb(58,77,128);
@@ -33,6 +32,32 @@ h1, h2, h3, h4, h5, h6 {
 	.title{
 		color: rgb(58,77,128);
 	}
+	.project h4{
+		margin-bottom: 1em;
+	}
+	.project li{
+		font-size: 1.25em;
+		font-weight: 400;
+		list-style-type: disc;
+		margin-left: 2em;
+	}
+		.project li ul{
+		}
+	.project img{
+		border: solid 1px lightgrey;
+		width: 100%;
+		border-radius: 5%;
+	}
+		.project img:before{
+			background: rgba(0,255,255, 0.5);
+			-moz-transition: background .3s linear;
+			-webkit-transition: background .3s linear;
+			-o-transition: background .3s linear;
+			transition: background .3s linear;
+		}
+		.project img:hover:before{
+			background:none;
+		}
 #banner{
 	background-color: rgb(200,200,200);
 	color: white;
